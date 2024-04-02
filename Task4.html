@@ -5,6 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Website</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <style>
+      .blockquotedquotes::before {
+          content: "\201c"; /* Opening quote */
+          font-size: 100px;
+          float: left; /* Float the opening quote to the left */
+          margin-right: 10px; /* Add some space between the quote and the text */
+          line-height: 1; /* Ensure proper alignment of the quotes with text */
+      }
+      
+      .blockquotedquotes::after {
+          content: "\201d"; /* Closing quote */
+          font-size: 100px;
+          float: right; /* Float the closing quote to the right */
+          margin-left: 10px; /* Add some space between the quote and the text */
+          line-height: 1; /* Ensure proper alignment of the quotes with text */
+      }
+      
+      .blockquotedquotes p {
+          font-size: 20px; /* Font size for the text */
+          color: blue; /* Text color */
+          margin: 10px 0; /* Margin around the paragraph */
+          overflow: hidden; /* Ensure proper alignment of the quotes with text */
+      }
+      </style>
+
   </head>
   <body>
 <div id="carouselExampleFade" class="carousel carousel-dark slide">
@@ -16,13 +42,21 @@
                   <div class="card text-center">
                     <div class="row g-0" style="box-shadow: 7px 7px 4px rgb(218, 218, 222); transition: transform 0.3s ease; background-color: #F7F5EA"  onmouseover="this.style.transform = 'scale(1.1)';" onmouseout="this.style.transform = 'scale(1)';">
                         <div class="col-md-4">
-                          <img src="D:\Internship\Task\Task 4\Rectangle 84.png" class="img-fluid rounded-start" alt="...">            
+                          <img src="Rectangle 84.png" class="img-fluid rounded-start" alt="...">            
                         </div>
                           <div class="col-md-8">
                             <div class="card-body">
-                              <h5 class="card-title">Card title</h5>
-                              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                              <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                              <blockquote class="blockquotedquotes">
+                                <p class="blockquoted text">
+                                Lorem ipsum dolor amet consectetur. Vitae sed <br>
+                               sollicitudin sodales magna consequat. Fringilla venenatis<br>
+                               ultrices sit suscipit aliquet vulputate mi. Eu amet at felis<br>
+                               cum pharetra. Sagittis turpis adipiscing massa sed.Lorem<br>
+                               ipsum dolor sit amet consectetur. Vitae sed sollicitudin<br>
+                               sodales magna consequat. Fringilla venenatis ultrices sit<br>
+                               suscipit aliquet vulputate mi.
+                                 </p>
+                               </blockquote>
                             </div>
                          </div>
                     </div>
